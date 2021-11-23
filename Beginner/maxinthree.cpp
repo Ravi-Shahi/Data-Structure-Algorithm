@@ -25,5 +25,5 @@ int main()
             cout<<c<<" is greater";
         }
     }
-    
+    return 0;
 } 
