@@ -7,20 +7,20 @@ int main()
     freopen("../input.txt", "r", stdin);
     freopen("../output.txt", "w", stdout);
 #endif
-    int n, zeroPosition = 1;
+    int n;
+    bool zero = false;
     cin >> n;
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j <=i; j++)
+        for (int j = 0; j <= i; j++)
         {
-            if (i == zeroPosition && j==zeroPosition)
+            if ((i + j) % 2 == 0)
             {
-                cout << "0";
-                zeroPosition++;
+                cout << "1";
             }
             else
             {
-                cout << "1";
+                cout << "0";
             }
         }
         cout << endl;
