@@ -8,7 +8,6 @@ int main()
     freopen("../output.txt", "w", stdout);
 #endif
     int n;
-    bool zero = false;
     cin >> n;
     for (int i = 0; i < n; i++)
     {
