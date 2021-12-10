@@ -13,9 +13,7 @@ int main()
     while (n > 0)
     {
         int lastDigit =n%10;
-        cout<<lastDigit;
         reverse = reverse*10 + lastDigit;
-        cout<<reverse<<endl;
         n /= 10;
     }
     cout << reverse << endl;
