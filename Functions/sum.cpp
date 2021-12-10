@@ -17,4 +17,5 @@ int main()
     cin >> a >> b;
     int sum = add(a, b);
     cout << "Sum of your numbers:\n" << sum;
+    return 0;
 }
