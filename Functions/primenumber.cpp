@@ -1,26 +1,17 @@
+//prime number between two given number
 #include <iostream>
 using namespace std;
 
-void checkPrime(int num)
+bool isPrime(int num)
 {
-    bool isPrime = 0;
     for (int i = 2; i < num; i++)
     {
         if (num % i == 0)
         {
-            isPrime = 1;
-            break;
+            return false;
         }
     }
-    if (isPrime == 0)
-    {
-        cout << "Your number is "<<num<<" and it is Prime." << endl;
-    }
-    else
-    {
-        cout << "Your number is not Prime." << endl;
-    }
-    return;
+    return true;
 }
 
 int main()
@@ -29,8 +20,14 @@ int main()
     freopen("../input.txt", "r", stdin);
     freopen("../output.txt", "w", stdout);
 #endif
-    int n;
-    cin >> n;
-    checkPrime(n);
+    int a, b;
+    cin >> a >> b;
+    for (int i = a; i < b; i++)
+    {
+        if (isPrime(i))
+        {
+            cout << i << endl;
+        }
+    }
     return 0;
 }
